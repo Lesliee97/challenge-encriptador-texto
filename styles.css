@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c9f3fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Ubuntu",
+        sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #7EDDF2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo {
+    max-height: 50px;
+    margin-left: 20px;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    width: 90%;
+    height: 70%;
+    max-width: 900px;
+    margin-top: 30px;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 680px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .input-container,
+    .output-container {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        padding: 10px 0;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    #inputText {
+        height: 100px;
+
+    }
+    #placeholderImage {
+        display: none;
+    }
+
+    #noMessage {
+        display: block;
+        font-size: 16px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .buttons button {
+        width: 80%;
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .note {
+        margin-top: 10px;
+    }
+}
+
+.input-container,
+.output-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 80%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+#inputText {
+    width: 100%;
+    height: 150px;
+    border: 0px;
+    background-color: #c9f3fc;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#inputText:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.note {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+#infoIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+    flex: 1;
+}
+
+#encryptBtn {
+    background-color: #F291B5;
+    color: white;
+}
+
+#decryptBtn {
+    background-color: #F2CA50;
+    color: white;
+    border: 1px solid white;
+}
+
+.output-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+#placeholderImage {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+#outputText {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#copyBtn {
+    background-color: #F2B2AC;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#refreshBtn {
+    margin-bottom: 30px;
+    background-color: #7EDDF2;
+    color: white;
+
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
