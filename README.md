@@ -2,7 +2,7 @@
 # Encriptador de Texto
 
 Este proyecto es una herramienta web que permite encriptar y desencriptar texto utilizando un método específico de sustitución. La aplicación está diseñada para trabajar con texto en minúsculas y sin tildes.
-
+# Link github pages: https://lesliee97.github.io/challenge-encriptador-texto/
 ## Funcionalidades
 
 ### 1. **Encriptar Texto**
